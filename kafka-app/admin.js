@@ -1,10 +1,4 @@
-const { Kafka } = require("kafkajs");
-
-const kafka = new Kafka({
-    clientId:'kafka-app',
-    brokers:['http://localhost:9092'] // The kafka service running up
-})
-
+const { kafka } = require('./client');
 
 
 async function init(){
@@ -31,3 +25,4 @@ async function init(){
 
 
 
+init();
